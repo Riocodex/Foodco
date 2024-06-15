@@ -23,9 +23,12 @@ function App() {
           <li>FEATURES</li>
           <li>PRICING</li>
           <li>BLOG</li>
+          <button className="signup-btn">Sign Up</button>
         </ul>
-        <button className="signup-btn">Sign Up</button>
+        
         <div className="menu-icon" onClick={toggleMenu}>
+          <div className={`bar ${isOpen ? 'rotate' : ''}`}></div>
+          <div className={`bar ${isOpen ? 'rotate' : ''}`}></div>
           <div className={`bar ${isOpen ? 'rotate' : ''}`}></div>
         </div>
       </nav>
@@ -43,9 +46,9 @@ function App() {
 
       <div className='who-we-are'>
         <div className='who-we-are-text'>
-          <p>Who We are</p>
+          <span className='span-orange'>Who We are</span>
           <h3>Creating Events to Remember</h3>
-          <span>At White Table Catering, we are passionate about creating meaningful celebrations and memorable occasions.</span>
+          <span className='span-grey'>At White Table Catering, we are passionate about creating <br/> meaningful celebrations and memorable occasions.</span>
         </div>
         <div className='who-we-are-images'>
           <div className='who-we-are-image'>

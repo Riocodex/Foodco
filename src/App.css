@@ -18,9 +18,15 @@ nav {
   color: #333;
 }
 
+.logo span{
+  color: #ee732f;
+  font-size: 28px;
+}
+
 .nav-links {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .nav-links li {
@@ -89,7 +95,7 @@ nav {
 }
 
 .second-section h1 span {
-  color: #ff6600;
+  color: #ee732f;
 }
 
 .second-section p {
@@ -102,6 +108,84 @@ nav {
   max-width: 80%; /* Adjust image size */
   height: auto;
   border-radius: 50%;
+}
+
+.who-we-are{
+  display: flex;
+  flex-direction: column;
+}
+.who-we-are-text{
+  text-align: center;
+  padding: 20px;
+}
+
+.who-we-are-text h3{
+  /* margin-top: -0.1px; */
+  font-size: 38px;
+}
+
+.span-orange{
+  font-size: 18px;
+  color: #ee732f;
+}
+
+.span-grey{
+  font-size: 22px;
+  color: #9b9b9b;
+}
+.who-we-are {
+  background-color: #ffffff;
+}
+
+.who-we-are-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  gap: 20px;
+  padding: 80px;
+}
+
+.who-we-are-image {
+  text-align: center;
+  border-radius: 10px;
+  width: 30%;
+  border-top-right-radius: 30px;
+}
+
+.who-we-are-image img {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.who-we-are-image p {
+  padding: 15px;
+  font-size: 24px;
+  color: #9b9b9b;
+}
+
+.who-we-are-image button {
+  border-radius: 20px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+  width: 130px;
+  transition: background-color 0.3s ease;
+  border: 1px solid #7354d7;
+  background-color: white;
+}
+
+
+
+.who-we-are-image button:hover {
+  background-color: #7354d7;
+  color: white;
 }
 
 
@@ -124,10 +208,41 @@ nav {
   .second-section {
     flex-direction: column;
     text-align: center;
+    padding: 60px 40px;
+  }
+
+  .second-section h1 {
+    font-size: 40px;
+    padding: 0;
+  }
+
+  .second-section p{
+    font-size: 20px;
   }
 
   .second-section img {
-    max-width: 80%;
-    margin-top: 20px;
+    max-width: 100%;
+    margin-top: -30px;
   }
+
+  .span-orange{
+    font-size: 24px;
+  }
+   
+  .span-grey{
+    font-size: 20px;
+  }
+
+  .who-we-are-images{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .who-we-are-image {
+    text-align: center;
+    border-radius: 10px;
+    width: 170%;
+    border-top-right-radius: 30px;
+  }
+
 }
