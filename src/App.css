@@ -232,14 +232,13 @@ nav {
 
 
 .menu-image{
-  width: 22%;
+  width: 20%;
   text-align: center;
-  position: relative; 
   padding: 5px;
 }
 
 .menu-image img{
-  height: 200px; 
+  height: 250px; 
   width: 100%; 
   object-fit: cover; 
 }
@@ -306,7 +305,8 @@ nav {
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    /* margin-left: -50px; */
   }
 
 }
