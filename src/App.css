@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fef6f3;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #555;
+}
+
+.signup-btn {
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #5a52e6;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.second-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 80px;
+  gap: 40px; /* Space between text and image */
+}
+
+.second-section > div {
+  flex: 1; /* Make both divs take equal space */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.second-section h1 {
+  font-size: 88px;
+  color: #333;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.second-section h1 span {
+  color: #ff6600;
+}
+
+.second-section p {
+  font-size: 25px;
+  color: #9b9b9b;
+  margin: 20px 0;
+}
+
+.second-section img {
+  max-width: 80%; /* Adjust image size */
+  height: auto;
+  border-radius: 50%;
+}
+
+
+
+@media (max-width: 768px) {
+  nav ul.nav-links {
+    display: none;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  nav ul.nav-links.open {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .second-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .second-section img {
+    max-width: 80%;
+    margin-top: 20px;
   }
 }
