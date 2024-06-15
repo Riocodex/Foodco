@@ -143,6 +143,36 @@ function App() {
   </div>
 </div>
 
+
+<div className='footer'>
+  <div className='footer-cols'>
+
+  <div className='footer-col'>
+      <h2>Foodco.</h2>
+      <p>Flat12 savoy terrace gzira</p>
+      <p>Valletta, malta</p>
+    </div>
+
+    <div className='footer-col'>
+      <h2>CONTACT US</h2>
+      <p><i class="fab fa-instagram"></i> Instagram</p>
+        <p><i class="fab fa-facebook"></i> Facebook</p>
+        <p><i class="fab fa-discord"></i> Discord</p>
+        <p><i class="fab fa-telegram"></i> Telegram</p>
+    </div>
+
+    <div className='footer-col'>
+      <h2>COMPANY</h2>
+      <p>Home</p>
+      <p>Menus</p>
+    </div>
+
+  </div>
+  <div className='conclusion'>
+    <p>Made with <i class="fas fa-heart red-heart"></i> by Riocodex</p>
+  </div>
+</div>
+
     </div>
   );
 }

@@ -243,6 +243,32 @@ nav {
   object-fit: cover; 
 }
 
+.footer{
+  background-color: #7354d7;
+  color: white;
+  padding: 20px;
+}
+
+.footer-cols{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-col{
+  padding: 80px;
+}
+
+.footer-col p{
+  color: #cec2f1;
+}
+
+.conclusion{
+  text-align: center;
+}
+
+.red-heart{
+  color: red;
+}
 
 
 
@@ -303,10 +329,20 @@ nav {
 
   .menu-images {
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    justify-content: center;
+    align-items: center;
     flex-wrap: nowrap;
-    /* margin-left: -50px; */
+   
+  }
+
+  .footer-cols{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-col{
+    padding: 30px;
+    text-align: center;
   }
 
 }
